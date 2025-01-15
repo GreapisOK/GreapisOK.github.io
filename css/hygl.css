@@ -1,0 +1,67 @@
+<style>
+.web-notice {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notice-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 550px;
+  background: #FFF;
+  transform: translate(-50%, -50%);
+  border-radius: 40px;
+  padding: 50px 40px;
+}
+
+.notice-header {
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+}
+
+.notice-content {
+  font-size: 16px;
+  margin-top: 26px;
+  line-height: 30px;
+  color: #999;
+}
+
+.notice-dismiss {
+  display: block;
+  background: #98a3ff;
+  color: #FFF;
+  text-align: center;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 60px;
+  margin: 45px auto 0;
+  border-radius: 32px;
+  width: 80%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.notice-dismiss:hover {
+  background-color: #8490ff;
+}
+</style>
+
+<div class="web-notice">
+  <div class="notice-container">
+    <h3 class="notice-header">网站通知</h3>
+    <div class="notice-content">
+      根据相关政策指导，本站决定暂停更新并整改现有内容，整改完毕后会恢复更新，请大家耐心等待。也请各位广大网友监督发现违规文章联系客服www.shake.cc刹客网络进行删除整改
+    </div>
+    <a class="notice-dismiss" role="button" tabindex="0" onclick="document.querySelector('.web-notice').remove()">我知道了</a>
+  </div>
+</div>
